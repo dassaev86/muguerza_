@@ -386,7 +386,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     z-index: 300;
     clear: both;
 }
