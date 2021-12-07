@@ -27,7 +27,7 @@
 }
 
 .scene1 {
-    background-image: url('../assets/scene1.png');
+    background-image: url('assets/scene1.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1482px;
@@ -166,7 +166,7 @@
 /* ********* SCENE2 ************************************************************************************************************** */
 
 .scene2 {
-    background-image: url('../assets/scene2.png');
+    background-image: url('assets/scene2.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
@@ -234,7 +234,7 @@
 /* ********* SCENE3 ************************************************************************************************************** */
 
 .scene3 {
-    background-image: url('../assets/scene3.png');
+    background-image: url('assets/scene3.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
@@ -296,7 +296,7 @@
 /* ********* SCENE4 ************************************************************************************************************** */
 
 .scene4 {
-    background-image: url('../assets/scene4.png');
+    background-image: url('assets/scene4.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
@@ -342,7 +342,7 @@
 /* ********* SCENE5 ************************************************************************************************************** */
 
 .scene5 {
-    background-image: url('../assets/scene5.png');
+    background-image: url('assets/scene5.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
@@ -379,7 +379,7 @@
 /* ********* SCENE6 ************************************************************************************************************** */
 
 .scene6 {
-    background-image: url('../assets/scene6.png');
+    background-image: url('assets/scene6.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
@@ -448,7 +448,7 @@
 /* ********* SCENE7 ************************************************************************************************************** */
 
 .scene7 {
-    background-image: url('../assets/scene7.png');
+    background-image: url('assets/scene7.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
@@ -498,7 +498,7 @@
 /* ********* SCENE8 ************************************************************************************************************** */
 
 .scene8 {
-    background-image: url('../assets/scene8.png');
+    background-image: url('assets/scene8.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
