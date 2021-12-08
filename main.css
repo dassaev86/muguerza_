@@ -26,6 +26,15 @@
     
 }
 
+.arrow {
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
 .scene1 {
     background-image: url('assets/scene1.png');
     background-repeat: no-repeat;
@@ -173,6 +182,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow-y: hidden;
 }
 
 .scene2__char {
@@ -343,6 +353,10 @@
     background-size: cover;
     position: relative;
     overflow-y: hidden;
+}
+
+.scene5__char {
+    visibility: hidden;
 }
 
 .scene5__char1 {
@@ -681,11 +695,6 @@
         z-index: 200;
     }
 
-    .textbox p {
-        font-size: 22px;
-        line-height: 26px;
-       
-    }
 
     .scene2__char1 {
         left: 29%;
@@ -702,6 +711,7 @@
     
     .textbox2 {
         left: 60%;
+        height: 270px;
     }
 
     .scene3__char1 {
@@ -1455,4 +1465,355 @@
     .textbox4 {
         top: 34%;
     }
+
+    .scene4 {
+        height: 714px;
+    }
+
+    .scene4__char {
+        width: 480px;
+        height: 714px;
+    }
+
+    .scene4__char1 {
+        top: 60%;
+        left: 13%;
+        width: 113px;
+        height: 261px;
+        transform: scale(1);
+    }
+    
+    .scene4__char2 {
+        top: 40%;
+        left: 17%;
+        width: 494px;
+        height: 380px;
+        transform: scale(1);
+    }
+
+    .textbox5 {
+        top: 7%;
+    }
+
+    .scene5 {
+        height: 714px;
+    }
+
+    .scene5__char {
+        width: 480px;
+        height: 714px;
+    }
+
+    .scene5__char1 {
+        top: 54%;
+        left: 45%;
+        width: 90px;
+        height: 194px;
+        transform: scale(1.15);
+    }
+
+    .scene5__char2 {
+        left: 7.5%;
+    }
+
+
+    .textbox6 {
+        top: 12%;
+    }
+
+    .scene6 {
+        height: 714px;
+    }
+
+    .scene6__char {
+        width: 480px;
+        height: 714px;
+    }
+
+    .scene6__char3 {
+        top: 75%;
+        left: 29.1%;
+        transform: scale(1.15);
+    }
+    
+    .scene6__char4 {
+        top: 80%;
+        left: 26%;
+        transform: scale(1.15);
+    }
+    
+    .scene6__char5 {
+        bottom: -3%;
+        left: 23%;
+        transform: scale(1.15);
+    }
+
+    .scene6__char6 {
+        width: 480px;
+        height: 480px;
+        z-index: 10;
+    }
+
+    .textbox7 {
+        top: 5%;
+    }
+
+    .scene6 {
+        height: 714px;
+    }
+
+
+    .scene6__char6 {
+        visibility: visible;
+        top: 0;
+        left: 0;
+    }
+
+    .scene7 {
+        height: 714px;
+    }
+
+    .scene7__char1 {
+        top: 50.5%;
+        right: 16%;
+        transform: scale(1.15);
+    }
+    
+    .scene7__char2 {
+        top: 63%;
+        right: 26%;     
+        transform: scale(1.15);
+    }
+    
+    .scene7__char3 {
+        top: 75%;
+        right: 38%;
+        transform: scale(1.15);
+    }
+
+    .scene8 {
+        height: 714px;
+    }
+
+    .scene8__char2 {
+        height: 570px;
+    }
+    
+    .scene8__char3 {
+        width: 480px;
+        height: 520px;
+    }
+
+    .textbox9 {
+        position: absolute;
+        top: 12%;
+        width: 317px;
+        height: 183px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+   
+}
+
+@media screen and (max-width: 415px) {
+
+    .scene2 {
+        height: 812px;
+    }
+
+    .scene2__char {
+        width: 415px;
+        height: 812px;
+    }
+
+    .scene2__char1 {
+        left: 28%;
+    }
+    
+    .scene2__char2 {
+        left: 0%;
+    }
+    
+    .scene3 {
+        height: 812px;
+    }
+
+    .scene3__char {
+        width: 415px;
+        height: 812px;
+    }
+
+    .scene3__char1 {
+        top: 64%;
+        left: 10%;
+        width: 61px;
+        height: 253px;
+    }
+
+    .scene3__char2 {
+        width: 290px;
+        height: 260px;
+        top: 60%;
+        right: -11%;
+    }
+
+    .scene3__char3 {
+        width: 415px;
+    }
+
+    .scene4__char {
+        width: 415px;
+        height: 714px;
+    }
+
+    .scene4__char1 {
+        left: 9%;
+    }
+    
+    .scene4__char2 {
+        left: 11%;
+    }
+
+    .scene5__char {
+        width: 415px;
+    }
+
+    .scene5__char1 {
+        top: 54%;
+        left: 43%;
+        width: 90px;
+        height: 194px;
+        transform: scale(1.05);
+    }
+
+    .scene5__char2 {
+        left: 1.5%;
+    }
+
+    .scene6__char {
+        width: 415px;
+    }
+
+    .scene6__char3 {
+        top: 75.5%;
+        left: 25.5%;
+        transform: scale(1);
+    }
+    
+    .scene6__char4 {
+        top: 81%;
+        left: 22%;
+        transform: scale(1);
+    }
+    
+    .scene6__char5 {
+        bottom: -1.5%;
+        left: 18.5%;
+        transform: scale(1);
+    }
+
+    .scene6__char6 {
+        width: 415px;
+        height: 415px;
+        z-index: 10;
+    }
+
+    .scene7__char1 {
+        top: 50.5%;
+        right: 12%;
+        transform: scale(1);
+    }
+    
+    .scene7__char2 {
+        top: 63%;
+        right: 22%;     
+        transform: scale(1);
+    }
+    
+    .scene7__char3 {
+        top: 75%;
+        right: 34%;
+        transform: scale(1);
+    }
+
+    .scene8__char2 {
+        height: 590px;
+    }
+    
+    .scene8__char3 {
+        width: 415px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .scene2__char {
+        width: 400px;
+    }
+
+    .scene3__char {
+        width: 400px;
+    }
+
+    .scene4__char {
+        width: 400px;
+    }
+
+    .scene4__char1 {
+        left: 2%;
+    }
+    
+    .scene4__char2 {
+        left: 3%;
+    }
+
+    .scene5__char {
+        width: 400px;
+    }
+
+    .scene5__char2 {
+        left: -2.5%;
+    }
+
+    .scene6__char {
+        width: 400px;
+    }
+
+    .scene6__char3 {
+        left: 23.2%;
+    }
+    
+    .scene6__char4 {
+        left: 19.8%;
+    }
+    
+    .scene6__char5 {
+        left: 16%;
+    }
+
+    .scene7__char1 {
+        right: 8%;
+    }
+    
+    .scene7__char2 {
+        right: 18%;     
+    }
+    
+    .scene7__char3 {
+        right: 30%;
+    }
+
+    .scene8__char2 {
+        height: 590px;
+    }
+    
+    .scene8__char3 {
+        width: 400px;
+        height: 440px;
+        left: -3%;
+    }
+
 }
