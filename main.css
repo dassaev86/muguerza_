@@ -35,6 +35,17 @@
     transform: scale(1.2);
 }
 
+/* img[class^='scene1__char'], div[class*=' scene1__char'], */
+img[class^='scene2__char'], div[class*=' scene2__char'],
+img[class^='scene3__char'], div[class*=' scene3__char'],
+img[class^='scene4__char'], div[class*=' scene4__char'],
+img[class^='scene5__char'], div[class*=' scene5__char'],
+img[class^='scene6__char'], div[class*=' scene6__char'],
+img[class^='scene7__char'], div[class*=' scene7__char'],
+img[class^='scene8__char'], div[class*=' scene8__char'] {
+    opacity: 1 !important;
+}
+
 .scene1 {
     background-image: url('assets/scene1.png');
     background-repeat: no-repeat;
