@@ -191,10 +191,17 @@
 let arrow = document.getElementById("arrow");
 
 arrow.addEventListener("click", (event) => {
-        if (window.screen.width > 599) {
-            window.scrollTo(0, 730);
-        } else {
-            window.scrollTo(0, 300);
+        if (window.screen.width > 1500) {
+            window.scrollTo(0, 670);
+        } 
+        else if (window.screen.width > 599) {
+            window.scrollTo(0, 800);
+        } 
+        else if (window.screen.width > 450) {
+            window.scrollTo(0, 400);
+        }
+        else if (window.screen.width > 300) {
+            window.scrollTo(0, 350);
         }
 })
 </script>
