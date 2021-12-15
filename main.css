@@ -3,6 +3,10 @@
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 
 .textbox {
     width: 506px;
@@ -34,6 +38,7 @@
 .arrow:hover {
     transform: scale(1.2);
 }
+
 
 /* img[class^='scene1__char'], div[class*=' scene1__char'], */
 img[class^='scene2__char'], div[class*=' scene2__char'],

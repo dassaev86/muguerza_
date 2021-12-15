@@ -25,21 +25,21 @@
                     <h2>Bienvenido a la<br>Experiencia Segura<br>Christus Mugerza</h2>
                     <span>Navega hacia abajo para un tour<br>completo por las medidas que aseguran<br>una Experiencia Segura para nuestros<br>pacientes y visitantes.</span>
                 </div>
-                <img class="arrow" src="assets/arrow-down.png" alt="Arrow">
+                <img id="arrow" class="arrow" src="assets/arrow-down.png" alt="Arrow">
             </div>
         </div>
 
-        <img class="scene1__char1" data-aos="fade-up" data-aos-duration="1500" src="assets/scene1_char1.png" alt="Cliente">
-        <img class="scene1__char2" data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="750" src="assets/scene1_char2.png" alt="Brillo">
-        <img class="scene1__char3" data-aos="fade-down" data-aos-duration="1500" src="assets/scene1_char3.png" alt="Edificio">
-        <img class="scene1__char4" data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="750" src="assets/scene1_char4.png" alt="Brillo Mobile">
+             <img class="scene1__char1" data-aos="fade-up" data-aos-duration="1500" src="assets/scene1_char1.png" alt="Cliente">
+            <img class="scene1__char2" data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="750" src="assets/scene1_char2.png" alt="Brillo">
+            <img class="scene1__char3" data-aos="fade-down" data-aos-duration="1500" src="assets/scene1_char3.png" alt="Edificio">
+            <img class="scene1__char4" data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="750" src="assets/scene1_char4.png" alt="Brillo Mobile">
 
-        <div class="textbox textbox1" data-aos="fade-up" data-aos-duration="2000">
-            <p>Asignamos accesos especiales en caso de sospecha COVID-19
-              e instalamos un protocolo de entrada para el resto de
-               nuestros visitantes.
-            </p>
-        </div>
+            <div class="textbox textbox1" data-aos="fade-up" data-aos-duration="2000">
+                <p>Asignamos accesos especiales en caso de sospecha COVID-19
+                e instalamos un protocolo de entrada para el resto de
+                nuestros visitantes.
+                </p>
+            </div>
         
     </section>
 
@@ -184,6 +184,21 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>    
+</script>   
+
+<script>
+
+let arrow = document.getElementById("arrow");
+
+arrow.addEventListener("click", (event) => {
+        if (window.screen.width > 599) {
+            window.scrollTo(0, 730);
+        } else {
+            window.scrollTo(0, 300);
+        }
+})
+</script>
+  
+
 </body>
 </html>
