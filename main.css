@@ -30,6 +30,10 @@ html {
     
 }
 
+.textboxmobile {
+    visibility: hidden !important;
+}
+
 .arrow {
     transition: all ease 0.5s;
     cursor: pointer;
@@ -182,14 +186,14 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .textbox1 {
     position: absolute;
-    top: 84%;
+    top: 100%;
     left: 7.5%;
     height: 190px;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .move{
-    visibility: visible;
+    top: 84%;
 }
 
 
@@ -255,17 +259,14 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .textbox2 {
     position: absolute;
-    top: 30%;
+    top: 80%;
     left: 57.5%;
     width: 506px;
     height: 253px;
-    opacity: 0;
-    transition: 2s;
 }
 
 .move2{
-    opacity: 1;
-    top: 10%;
+    top: 18%;
 }
 
 
@@ -276,7 +277,7 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
     background-repeat: no-repeat;
     width: 100%;
     height: 1024px;
-    background-position: center;
+    background-position: top 10%;
     background-size: cover;
     position: relative;
     overflow-y: hidden;
@@ -296,7 +297,7 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .scene3__char2 {
     position: absolute;
-    top: 40%;
+    bottom: 0;
     right: 0;
     width: 771px;
     height: 643px;
@@ -307,20 +308,47 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
     visibility: hidden;
 }
 
+.scene3__char4 {
+    position: absolute;
+    top: -100%;
+    left: 27%;
+    width: 771px;
+    height: 148px;
+    /* opacity: 0; */
+}
+
+.move-air {
+    top: 2%;
+    /* opacity: 1; */
+}
+
+
 .textbox3 {
     position: absolute;
-    top: 5%;
+    top: 80%;
     left: 8%;
     width: 506px;
     height: 223px;
 }
 
+.move3 {
+    top: -60%;
+}
+
 .textbox4 {
     position: absolute;
-    top: 5%;
+    top: 200%;
     left: 60%;
     width: 506px;
     height: 223px;
+}
+
+.move4 {
+    top: 20%;
+}
+
+.scrollmagic-pin-spacer {
+    overflow: hidden;
 }
 
 /* ********* SCENE4 ************************************************************************************************************** */
@@ -367,12 +395,15 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .textbox5 {
     position: absolute;
-    top: 5%;
+    top: 80%;
     left: 5%;
     width: 506px;
     height: 234px;
 }
 
+.move5{
+    top: 5%;
+}
 
 /* ********* SCENE5 ************************************************************************************************************** */
 
@@ -409,10 +440,14 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .textbox6 {
     position: absolute;
-    top: 5%;
+    top: 80%;
     right: 5%;
     width: 506px;
     height: 216px;
+}
+
+.move6{
+    top: 5%;
 }
 
 /* ********* SCENE6 ************************************************************************************************************** */
@@ -487,11 +522,19 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .textbox7 {
     position: absolute;
-    top: 7%;
+    top: 80%;
     right: 8.5%;
     width: 506px;
     height: 227px;
-    overflow-y: visible;
+    overflow-y: hidden !important;
+}
+
+.move7{
+    top: 7%;
+}
+
+.scrollmagic-pin-spacer {
+    overflow-y: hidden;
 }
 
 
@@ -545,6 +588,7 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
     left: 5%;
     width: 506px;
     height: 260px;
+    opacity: 1 !important;
 }
 
 /* ********* SCENE8 ************************************************************************************************************** */
@@ -578,12 +622,55 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
 .textbox9 {
     position: absolute;
-    top: 10%;
+    top: 80%;
     left: 8%;
     width: 506px;
     height: 236px;
 }
 
+.move9{
+    top: 10%;
+}
+
+footer {
+    width: 100%;
+    height: 147px;
+    background-color: #FFFFFF;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+.footer-info h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 28px;
+    color: #27004B;
+    overflow: hidden;
+}
+
+.footer-info a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+    color: #27004B;
+    margin-top: 10px;
+    transition: all ease 0.5s;
+    overflow: hidden;
+}
+
+.footer-info a:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 
 /* *******************RESPONSIVE DESIGN************************************************************************************************** */
@@ -642,6 +729,10 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
     /* .scene3__char2 {
         left: 36%;
     } */
+
+    .scene3__char4 {
+        left: 30%;
+    }
 
     .scene4__char1 {
         left: 10%;
@@ -719,9 +810,7 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
     .textbox {
         width: 380px;
-        border: 2px solid #27004B;
         box-sizing: border-box;
-        border-radius: 25px;
         background: #FFFFFF;
         display: flex;
         align-items: center;
@@ -755,6 +844,10 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
     /* .scene3__char2 {
         left: 30%;
     } */
+
+    .scene3__char4 {
+        left: 37%;
+    }
 
     .textbox3 {
         left: 6%;
@@ -871,6 +964,10 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
         right: -15%;
     }
 
+    .scene3__char4 {
+        left: 40%;
+    }
+
     .textbox3 {
         left: 4%;
     }
@@ -941,6 +1038,12 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
 
     .textbox {
         width: 317px;
+        visibility: hidden;
+    }
+
+    .textboxmobile {
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
     .textbox p {
@@ -1455,6 +1558,16 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
         right: 0;
     }
 
+    .footer-info h6 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .footer-info a {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1813,6 +1926,16 @@ img[class^='scene8__char'], div[class*=' scene8__char'] {
     .scene8__char3 {
         width: 415px;
         height: 450px;
+    }
+
+    .footer-info h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .footer-info a {
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 

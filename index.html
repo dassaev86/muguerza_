@@ -10,6 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Mugerza</title>
+
+    <!-- Scroll Magic Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="js/debug.addIndicators.min.js"></script>
 </head>
 <body>
     <section class="scene1">
@@ -29,12 +37,19 @@
             </div>
         </div>
 
-             <img class="scene1__char1" data-aos="fade-up" data-aos-duration="1500" src="assets/scene1_char1.png" alt="Cliente">
+             <img class="scene1__char1 trigger" data-aos="fade-up" data-aos-duration="1500" src="assets/scene1_char1.png" alt="Cliente">
             <img class="scene1__char2" data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="750" src="assets/scene1_char2.png" alt="Brillo">
             <img class="scene1__char3" data-aos="fade-down" data-aos-duration="1500" src="assets/scene1_char3.png" alt="Edificio">
             <img class="scene1__char4" data-aos="fade-down-right" data-aos-duration="2000" data-aos-offset="750" src="assets/scene1_char4.png" alt="Brillo Mobile">
 
-            <div id="textbox1" class="textbox textbox1 trigger" data-aos="fade-up" data-aos-duration="3000">
+            <div id="textbox1" class="textbox textbox1">
+                <p>Asignamos accesos especiales en caso de sospecha COVID-19
+                e instalamos un protocolo de entrada para el resto de
+                nuestros visitantes.
+                </p>
+            </div>
+
+            <div class="textbox textbox1 textboxmobile" data-aos="fade-up" data-aos-duration="3000" data-aos-offset="-100">
                 <p>Asignamos accesos especiales en caso de sospecha COVID-19
                 e instalamos un protocolo de entrada para el resto de
                 nuestros visitantes.
@@ -54,7 +69,15 @@
     <img src="assets/scene2_char3.png" data-aos="fade-left" data-aos-duration="2000" class="scene2__char3" alt="Visitante2">
     <img src="assets/scene2_char4.png" class="scene2__char4" alt="Brillo">
     <img src="assets/scene2_char5.png" data-aos="fade-left" data-aos-duration="2000" class="scene2__char5" alt="Visitante2_Mobile">
-    <div id="textbox2" class="textbox textbox2 trigger">
+
+    <div id="textbox2" class="textbox textbox2">
+        <p>Desde tu llegada, todas las áreas de atención están preparadas con medidas 
+           que aseguran la sana distancia entre visitantes y pacientes. Nuestro personal
+           está capacitado para brindar la mejor atención para el cuidado de todos.
+        </p>
+    </div>
+
+    <div class="textbox textbox2 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
         <p>Desde tu llegada, todas las áreas de atención están preparadas con medidas 
            que aseguran la sana distancia entre visitantes y pacientes. Nuestro personal
            está capacitado para brindar la mejor atención para el cuidado de todos.
@@ -69,19 +92,34 @@
 
 
      <img src="assets/scene3_char.png" class="scene3__char" alt="Fondo_Mobile">
-    <img src="assets/scene3_char1.png" data-aos="fade-right" data-aos-duration="2000" class="scene3__char1" alt="Enfermera">
-    <img src="assets/scene3_char2.png" data-aos="fade-left" data-aos-duration="2000" class="scene3__char2" alt="Paciente">
+    <img src="assets/scene3_char1.png" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="-200" class="scene3__char1" alt="Enfermera">
+    <img src="assets/scene3_char2.png" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="-200" class="scene3__char2" alt="Paciente">
     <img src="assets/scene3_char3.png" class="scene3__char3" alt="Fondo_Superior">
+    <img id="scene3__char4" src="assets/scene3_char4.png" class="scene3__char4" alt="Aire Circulando">
 
 
-    <div class="textbox textbox3" data-aos="fade-right" data-aos-duration="2000">
+    <div id="textbox3" class="textbox textbox3">
         <p>Implementamos estrictas políticas para reducir el número de visitantes y 
            así los riesgos que esto conlleva, de acuerdo a los semáforos sanitarios
            nacionales.
         </p>
     </div>
 
-    <div class="textbox textbox4" data-aos="fade-left" data-aos-duration="2000">
+    <div class="textbox textbox3 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
+        <p>Implementamos estrictas políticas para reducir el número de visitantes y 
+           así los riesgos que esto conlleva, de acuerdo a los semáforos sanitarios
+           nacionales.
+        </p>
+    </div>
+
+    <div id="textbox4" class="textbox textbox4">
+        <p>Nuestros sistemas de ventilación y purificación de aire de alta tecnología 
+           permiten que el aire en habitaciones y distintas zonas del hospital sea limpio
+           y seguro.
+        </p>
+    </div>
+
+    <div id="textbox4" class="textbox textbox4 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
         <p>Nuestros sistemas de ventilación y purificación de aire de alta tecnología 
            permiten que el aire en habitaciones y distintas zonas del hospital sea limpio
            y seguro.
@@ -98,7 +136,13 @@
     <img src="assets/scene4_char2.png" data-aos="fade-left" data-aos-duration="2000" class="scene4__char2" alt="Enfermera y Doctor">
     <img src="assets/scene4_char3.png" class="scene4__char3" alt="Equipos">
 
-    <div class="textbox textbox5" data-aos="zoom-in-right" data-aos-duration="2000">
+    <div id="textbox5" class="textbox textbox5">
+        <p>Además, nuestro personal médico, de atención, y de enfermería está vacunado al 100% 
+           y todas las áreas del hospital son sanitizados con los estándares hospitalarios internacionales.
+        </p>
+    </div>
+
+    <div class="textbox textbox5 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
         <p>Además, nuestro personal médico, de atención, y de enfermería está vacunado al 100% 
            y todas las áreas del hospital son sanitizados con los estándares hospitalarios internacionales.
         </p>
@@ -110,10 +154,16 @@
 
 <section class="scene5">
     <img src="assets/scene5_char.png" class="scene5__char" alt="Fondo_Mobile">
-    <img src="assets/scene5_char1.png" data-aos="fade-down-right" data-aos-duration="2000" class="scene5__char1" alt="Doctor">
+    <img src="assets/scene5_char1.png" data-aos="fade-right" data-aos-duration="2000" class="scene5__char1" alt="Doctor">
     <img src="assets/scene5_char2.png" class="scene5__char2" alt="Muebles">
 
-    <div class="textbox textbox6" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div id="textbox6" class="textbox textbox6">
+        <p>Asignamos salas para toma de muestras, análisis y Rayos X especiales 
+           para atender a pacientes COVID-19, separadas del resto de nuestras áreas.
+        </p>
+    </div>
+
+    <div class="textbox textbox6 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
         <p>Asignamos salas para toma de muestras, análisis y Rayos X especiales 
            para atender a pacientes COVID-19, separadas del resto de nuestras áreas.
         </p>
@@ -135,7 +185,14 @@
     <img src="assets/scene6_char5.png" data-aos="fade-up" data-aos-duration="2000" class="scene6__char5" alt="Huellas Abajo">
 
 
-    <div class="textbox textbox7"  data-aos="zoom-in" data-aos-duration="2000">
+    <div id="textbox7" class="textbox textbox7">
+        <p>Desde la llegada hasta la salida, nuestros espacios cuentan con áreas de 
+           sanitización debidamente indicadas para cuidar la salud de nuestros pacientes,
+           visitantes y colaboradores.
+        </p>
+    </div>
+
+    <div class="textbox textbox7 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
         <p>Desde la llegada hasta la salida, nuestros espacios cuentan con áreas de 
            sanitización debidamente indicadas para cuidar la salud de nuestros pacientes,
            visitantes y colaboradores.
@@ -158,6 +215,14 @@
            aisladas del resto del hospital que cuentan con elevadores designados y 
            salas especiales para tomas de muestras y análisis.
         </p>
+    </div>
+
+    <div class="textbox textbox8 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
+        <p>Asignamos áreas estratégicas para la atención de pacientes con COVID-19
+           aisladas del resto del hospital que cuentan con elevadores designados y 
+           salas especiales para tomas de muestras y análisis.
+        </p>
+    </div>
 
 </section>
 
@@ -167,16 +232,32 @@
 <section class="scene8">
 
     <img src="assets/scene8_char1.png" data-aos="fade-down-right" data-aos-duration="3000" class="scene8__char1" alt="Brillo">
-    <img src="assets/scene8_char2.png" data-aos="fade-down-right" data-aos-duration="3000" class="scene8__char2" alt="Brillo Mobile">
+    <img src="assets/scene8_char2.png" data-aos="fade-down" data-aos-duration="1500" class="scene8__char2" alt="Brillo Mobile">
     <img src="assets/scene8_char3.png" class="scene8__char3" alt="Edificio">
 
-    <div class="textbox textbox9" data-aos="fade-down" data-aos-duration="2000">
+    <div id="textbox9" class="textbox textbox9">
         <p>Así, toda la experiencia en nuestros hospitales y clínicas es segura 
            para todos, y podemos seguir cuidando tu salud mientras contribuimos 
            con un hospital seguro.
         </p>
+    </div>
+
+    <div class="textbox textbox9 textboxmobile" data-aos="fade-up" data-aos-duration="2000">
+        <p>Así, toda la experiencia en nuestros hospitales y clínicas es segura 
+           para todos, y podemos seguir cuidando tu salud mientras contribuimos 
+           con un hospital seguro.
+        </p>
+    </div>
 
 </section>
+
+
+<footer>
+    <div class="footer-info">
+        <h6>Conoce más sobre Christus Muguerza</h6>
+        <a  href="https://www.christusmuguerza.com.mx" target="_blank">www.christusmuguerza.com.mx</a>
+    </div>
+</footer>
 
 
 
@@ -206,11 +287,11 @@ arrow.addEventListener("click", (event) => {
 })
 </script>
   
-
+<!-- 
 <script src="js/ScrollMagic.min.js"></script>
 <script src="js/debug.addIndicators.min.js"></script>
 <script src="js/TweenMax.min.js"></script>
-<script src="js/animation.gsap.min.js"></script>
+<script src="js/animation.gsap.min.js"></script> -->
 <script src="custom.js"></script>
 
 </body>
