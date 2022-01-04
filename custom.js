@@ -62,7 +62,7 @@ const scene8 = new ScrollMagic.Scene({ triggerElement: ".scene8", duration: '100
 }
 
 
-window.onresize = function(){ 
-    location.reload(); 
-}
+// window.onresize = function(){ 
+//     location.reload(); 
+// }
 
